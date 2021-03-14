@@ -20,7 +20,7 @@ Once the remainder is lower than the divisor, the game is over.
 
 ### Running The Game
 
-1. `cd ./class-hero/exercise1`
+1. `cd exercise1`
 2. `python longdiv.py`
 
 # Exercise 2 - Sampling From a Large Collection
@@ -53,7 +53,7 @@ The qNodes are finally returned in one of the desired data representations - eit
 
 ### Running The Algorithm
 
-1. `cd ./class-hero/exercise2`
+1. `cd exercise2`
 2. At the bottom of the code where sampleQnodes is called, modify `let sampleSet = sampleQnodes(10, 100, "logarithmic", "array");` with the desired parameters.
 3. (Optional) Uncomment the line below to get a json representation of the output
 4. `node sampling.js` OR `node sampling.js >> output.json`
