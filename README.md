@@ -14,6 +14,8 @@ The game will continue in a loop, going through the following phases:
 
 - Remainder, where the next number in placevalue is brought down for the gameloop to repeat
 
+If the player fails to solve a step 3 or more times, a hint with the answer will be provided.
+
 Once the remainder is lower than the divisor, the game is over.
 
 ### Running The Game
