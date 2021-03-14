@@ -84,8 +84,12 @@ function sampleQnodes(numSets, numQuestionsPerSet, difficultyProgression, repres
     throw new Error('representation must be array or dictionary.');
   } else if (!["linear", "exponential", "logarithmic"].includes(difficultyProgression)) {
     throw new Error("difficultyProgression must be linear, exponential, or  logarithmic.");
+  } else if (numSets > 10 || numSets < 1) {
+    throw new Error("numSets must be from 1-10");
+  } else if (numQuestionsPerSet > 100 || numQuestionsPerSet < 10) {
+    throw new Error("numQuestionsPerSet must be from 10-100");
   }
-  
+
   if (representation == "array") {
     let sampleSet = [];
     let allQnodes = createUniqueQnodesHashmap(10000);
@@ -271,6 +275,5 @@ function sampleQnodes(numSets, numQuestionsPerSet, difficultyProgression, repres
   }
 }
 
-let sampleSet = sampleQnodes(10, 100, "exponential", "s");
-console.log(sampleSet)
+let sampleSet = sampleQnodes(10, 100, "linear", "array");
 // console.log(JSON.stringify(sampleSet));
